@@ -14,14 +14,7 @@
         
         <q-btn flat dense icon="logout" color="red" label="Salir" @click="salir" />
       </q-toolbar>
-
-      <q-tabs align="left" active-color="red" class="text-grey-5">
-        <q-route-tab to="/" label="Inicio" />
-        <q-route-tab to="/pecho" label="Pecho" />
-        <q-route-tab to="/brazo" label="Brazo" />
-        <q-route-tab to="/pierna" label="Pierna" />
-        <q-route-tab to="/espalda" label="Espalda" />
-      </q-tabs>
+      <!-- El bloque de q-tabs ha sido eliminado -->
     </q-header>
 
     <q-drawer v-if="!isLogin" v-model="leftDrawerOpen" side="left" elevated class="bg-black text-white">
